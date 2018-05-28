@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TaiJi</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 253, 237, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+            border:1px solid gray;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        div::before{
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px; 
+            border: 40px solid #000;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-top: 50px;
+        }
+        div::after{
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 40px solid #fff;
+            background-color: #000;
+            border-radius: 50%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
